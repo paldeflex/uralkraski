@@ -1,17 +1,7 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-',  app()->getLocale())  }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title') | {{config('app.name', 'Laravel')}}</title>
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-</head>
-<body>
-<header>Шапка</header>
-@yield('content')
-<footer>Подвал</footer>
+@extends('layouts.clean')
 
-</body>
-</html>
+@section('childContent')
+    @extends('layouts.partials.header')
+    @yield('content')
+    <footer></footer>
+@endsection
