@@ -21,7 +21,7 @@
     />
     <link rel="stylesheet" href="css/app.css" />
 </head>
-<body>
+<body @isset($cssClass)class="{{$cssClass}}"@endisset>
 @yield('childContent')
 <script
     src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"
