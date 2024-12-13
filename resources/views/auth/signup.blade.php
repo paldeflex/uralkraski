@@ -1,5 +1,7 @@
 @extends('layouts.clean', ['cssClass' => 'page-signup'])
 
+@section('title', 'Регистрация')
+
 @section('childContent')
 <main>
     <div class="container-small page-login">
