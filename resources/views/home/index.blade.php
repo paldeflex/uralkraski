@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <x-card>
+    @php
+        $color = 'red';
+        $bgColor = 'blue'
+    @endphp
+
+    <x-card :$color :$bgColor class="card-rounded">
         <x-slot:title>Заголовок карточки товара</x-slot:title>
         Описание карточки товара
         <x-slot:footer>Подвал карточки товара</x-slot:footer>
