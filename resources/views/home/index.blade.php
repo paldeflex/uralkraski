@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+    <x-card>
+        <x-slot:title>Заголовок карточки товара</x-slot:title>
+        Описание карточки товара
+        <x-slot:footer>Подвал карточки товара</x-slot:footer>
+    </x-card>
     <!-- Слайдер -->
     <section class="hero-slider">
         <!-- Карусель -->
