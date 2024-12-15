@@ -7,7 +7,7 @@
     @endphp
 
     <x-card :$color :$bgColor class="card-rounded">
-        <x-slot:title>Заголовок карточки товара</x-slot:title>
+        <x-slot:title class="card-header-blue">Заголовок карточки товара</x-slot:title>
         Описание карточки товара
         <x-slot:footer>Подвал карточки товара</x-slot:footer>
     </x-card>
