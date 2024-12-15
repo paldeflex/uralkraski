@@ -1,6 +1,6 @@
-@extends('layouts.clean')
+@props(['title' => ''])
 
-@section('childContent')
-    @include('layouts.partials.header')
-    @yield('content')
-@endsection
+<x-base-layout :$title>
+    <x-layouts.header />
+    {{ $slot }}
+</x-base-layout>

@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Инициализация мобильных фильтров
     const initMobileFilters = () => {
         const filterButton = document.querySelector('.show-filters-button');
-        const sidebar = document.querySelector('.search-coatings-sidebar');
+        const sidebar = document.querySelector('.search-products-sidebar');
         const closeButton = document.querySelector('.close-filters-button');
 
         if (!filterButton) return;

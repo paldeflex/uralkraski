@@ -1,15 +1,15 @@
 <!-- Форма найти покрытие -->
-<section class="find-coating">
+<section class="find-product">
     <div class="container">
         <form
             action="{{ $action }}"
             method="{{ $method }}"
-            class="find-coating-form card flex p-medium"
+            class="find-product-form card flex p-medium"
         >
-            <div class="find-coating-inputs">
+            <div class="find-product-inputs">
                 <!-- Тип покрытия -->
                 <div>
-                    <select id="coatingTypeSelect" name="coating_type_id">
+                    <select id="productTypeSelect" name="product_type_id">
                         <option value="">Тип основы</option>
                         <option value="1">Полиуретановые</option>
                         <option value="2">Эпоксидные</option>
@@ -64,10 +64,10 @@
                 </div>
             </div>
             <div>
-                <button type="button" class="btn btn-find-coating-reset">
+                <button type="button" class="btn btn-find-product-reset">
                     Сбросить
                 </button>
-                <button class="btn btn-primary btn-find-coating-submit">
+                <button class="btn btn-primary btn-find-product-submit">
                     Найти
                 </button>
             </div>
