@@ -1,69 +1,55 @@
-<!-- Форма найти покрытие -->
+<!-- Форма найти товар -->
 <section class="find-product">
-    <div class="container">
-        <form
-            action="{{ $action }}"
-            method="{{ $method }}"
-            class="find-product-form card flex p-medium"
-        >
-            <div class="find-product-inputs">
-                <!-- Тип покрытия -->
-                <div>
-                    <select id="productTypeSelect" name="product_type_id">
-                        <option value="">Тип основы</option>
-                        <option value="1">Полиуретановые</option>
-                        <option value="2">Эпоксидные</option>
-                        <option value="3">Модифицированные сополимеры</option>
-                        <option value="4">Алкидно-уретановые</option>
-                    </select>
-                </div>
-                <!-- Область применения -->
-                <div>
-                    <select id="applicationSelect" name="application_id">
-                        <option value="">Область применения</option>
-                        <option value="1">Решения для объектов нефтегазового комплекса</option>
-                        <option value="2">Решения для машиностроения</option>
-                        <option value="3">Решения для транспортного строительства</option>
-                        <option value="4">Решения для промышленного и гражданского строительства</option>
-                        <option value="5">Решения для портовой инфраструктуры</option>
-                        <option value="6">Решения для химической отрасли</option>
-                    </select>
-                </div>
-                <!-- Производитель -->
-                <div>
-                    <select id="manufacturerSelect" name="manufacturer_id">
-                        <option value="">Цель назначения</option>
-                        <option value="1">Защита металлоконструкций</option>
-                        <option value="2">Защита подземных трубопроводов от коррозии</option>
-                        <option value="3">Защита внутренней поверхности резервуаров</option>
-                        <option value="4">Защита бетона от коррозии</option>
-                    </select>
-                </div>
-                <!-- Толщина слоя -->
-                <div>
-                    <input
-                        type="number"
-                        placeholder="Толщина слоя (мкм)"
-                        name="layer_thickness"
-                    />
-                </div>
-                <!-- Ценовой диапазон -->
-                <div>
-                    <input
-                        type="number"
-                        placeholder="Цена от (₽)"
-                        name="price_from"
-                    />
-                </div>
-                <div>
-                    <input
-                        type="number"
-                        placeholder="Цена до (₽)"
-                        name="price_to"
-                    />
-                </div>
+    <form
+        action="{{ $action }}"
+        method="{{ $method }}"
+        class="find-a-product-form card flex p-medium"
+    >
+        <div class="find-a-product-inputs">
+            <!-- Название товара -->
+            <div>
+                <input
+                    type="text"
+                    placeholder="Название товара"
+                    name="product_title"
+                />
+            </div>
+            <!-- Тип покрытия -->
+            <div>
+                <select id="productTypeSelect" name="product_type_id">
+                    <option value="">Тип основы</option>
+                    <option value="1">Полиуретановые</option>
+                    <option value="2">Эпоксидные</option>
+                    <option value="3">Модифицированные сополимеры</option>
+                    <option value="4">Алкидно-уретановые</option>
+                </select>
+            </div>
+            <!-- Цель назначения -->
+            <div>
+                <select id="manufacturerSelect" name="manufacturer_id">
+                    <option value="">Цель назначения</option>
+                    <option value="1">Защита металлоконструкций</option>
+                    <option value="2">Защита подземных трубопроводов от коррозии</option>
+                    <option value="3">Защита внутренней поверхности резервуаров</option>
+                    <option value="4">Защита бетона от коррозии</option>
+                </select>
+            </div>
+            <!-- Ценовой диапазон -->
+            <div>
+                <input
+                    type="number"
+                    placeholder="Цена от (₽)"
+                    name="price_from"
+                />
             </div>
             <div>
+                <input
+                    type="number"
+                    placeholder="Цена до (₽)"
+                    name="price_to"
+                />
+            </div>
+            <div style="display: flex; justify-content: center; width: 320px; margin: 0 auto;">
                 <button type="button" class="btn btn-find-product-reset">
                     Сбросить
                 </button>
@@ -71,7 +57,7 @@
                     Найти
                 </button>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
 </section>
-<!--/ Форма найти покрытие -->
+<!--/ Форма найти товар -->

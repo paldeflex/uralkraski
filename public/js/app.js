@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Функция создания элемента изображения
         function createImage(url) {
             const a = document.createElement("a");
-            a.classList.add("item-form-image-preview");
+            a.classList.add("product-form-image-preview");
             a.innerHTML = `
                 <img src="${url}"  alt=""/>
             `;
@@ -113,11 +113,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Инициализация карусели изображений товара
     const imageCarousel = () => {
-        const carousel = document.querySelector('.item-images-carousel');
+        const carousel = document.querySelector('.product-images-carousel');
         if (!carousel) {
             return;
         }
-        const thumbnails = document.querySelectorAll('.item-image-thumbnails img');
+        const thumbnails = document.querySelectorAll('.product-image-thumbnails img');
         const activeImage = document.getElementById('activeImage');
         const prevButton = document.getElementById('prevButton');
         const nextButton = document.getElementById('nextButton');

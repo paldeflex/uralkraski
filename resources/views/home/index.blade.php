@@ -83,7 +83,9 @@
     </section>
     <!--/ Слайдер -->
     <main>
-        <x-search-form action="/search" method="GET" />
+        <div class="container">
+            <x-search-form action="/search" method="GET" />
+        </div>
         <!-- Новые товары -->
         <section>
             <div class="container">
