@@ -1,5 +1,5 @@
 <div class="product-item card">
-    <a href="/view.html">
+    <a href="{{ route('product.show', 1) }}">
         <img
             src="/img/products/product-1/2.jpeg"
             alt=""
@@ -26,7 +26,9 @@
                 </svg>
             </button>
         </div>
-        <h2 class="product-item-title">СК-ПУР Полиуретановая грунтовка для металла</h2>
+        <a href="{{ route('product.show', 1) }}" class="product-item-link">
+            <h2 class="product-item-title">СК-ПУР Полиуретановая грунтовка для металла</h2>
+        </a>
         <p class="product-item-price">500 ₽</p>
         <hr />
         <div class="m-0 product-item-badge-container">

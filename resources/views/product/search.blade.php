@@ -38,7 +38,7 @@
 
                         <!-- Find a product form -->
                         <section class="find-a-product">
-                                <x-search-form  action="/search" method="GET" />
+                                <x-search-form />
                         </section>
                         <!--/ Find a product form -->
                     </div>

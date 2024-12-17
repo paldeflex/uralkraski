@@ -1,8 +1,8 @@
 <!-- Форма найти товар -->
 <section class="find-product">
     <form
-        action="{{ $action }}"
-        method="{{ $method }}"
+        action="{{ route("product.search") }}"
+        method="GET"
         class="find-a-product-form card flex p-medium"
     >
         <div class="find-a-product-inputs">

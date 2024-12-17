@@ -725,6 +725,16 @@ main {
   gap: 1rem;
 }
 
+.product-item-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: .2s;
+}
+
+.product-item-link:hover {
+    color: var(--link-color);
+}
+
 .product-item-title {
   margin: 0.75rem 0;
   font-size: 16px;
