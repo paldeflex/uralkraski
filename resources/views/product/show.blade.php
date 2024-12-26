@@ -86,7 +86,7 @@
                     <div class="card product-detailed-description">
                         <h2 class="product-details-title">Свойства товара</h2>
 
-                        <ul class="product-specifications">
+                        <ul class="product-properties">
                             <li>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

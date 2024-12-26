@@ -1098,19 +1098,19 @@ a.pagination-item:hover {
   line-height: 24px;
 }
 
-.product-specifications {
+.product-properties {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.product-specifications > li {
+.product-properties > li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.product-specifications > li > svg {
+.product-properties > li > svg {
   width: 18px;
 }
 
