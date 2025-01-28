@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 use function view;
 
@@ -23,22 +24,22 @@ class ProductController extends Controller
         //
     }
 
-    public function show(string $id)
+    public function show(Product $product)
     {
         return view('product.show');
     }
 
-    public function edit(string $id)
+    public function edit(Product $product)
     {
         return view('product.edit');
     }
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, Product $product)
     {
         //
     }
 
-    public function destroy(string $id)
+    public function destroy(Product $product)
     {
         //
     }
