@@ -22,7 +22,7 @@ return new class extends Migration
             $table->longText('description')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
-            $table->timestamp('deleted_at');
+            $table->softDeletes();
         });
     }
 
