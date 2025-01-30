@@ -11,7 +11,7 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('title', 255);
+            $table->string('name', 255);
             $table->foreignId('coating_purpose_id')->constrained('coating_purpose');
             $table->foreignId('substrate_types_id')->constrained('substrate_types');
             $table->integer('price');
